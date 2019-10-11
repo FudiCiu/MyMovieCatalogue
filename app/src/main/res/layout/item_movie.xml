@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardElevation="8dp">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal"
+       android:padding="8dp">
+       <ImageView
+           android:id="@+id/img_photo"
+           android:layout_weight="3"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:src="@color/colorPrimary"/>
+       <LinearLayout
+           android:layout_weight="12"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_marginLeft="8dp"
+           android:layout_marginRight="8dp"
+           android:orientation="vertical">
+
+           <TextView
+               android:id="@+id/tv_judul"
+               style="@style/list_movie_title"
+               android:text="@string/judul_title"
+               />
+           <TextView
+               android:id="@+id/tv_tgl_rilis"
+               android:text="@string/tanggal_rilis_title"
+               style="@style/list_movie_tanggal_rilis"/>
+           <TextView
+               android:id="@+id/tv_deskripsi"
+               android:text="@string/lorem_ipsum_short"
+               style="@style/list_movie_description"/>
+       </LinearLayout>
+   </LinearLayout>
+</android.support.v7.widget.CardView>

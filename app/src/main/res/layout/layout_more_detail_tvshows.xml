@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgdetail"
+            android:padding="16dp">
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tv_genre"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/tv_genre_h"
+                style="@style/detail_title"
+                android:text="@string/genre_title" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/tv_genre_h"
+                app:layout_constraintBottom_toTopOf="@id/tv_detail_h"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/tv_genre"
+                style="@style/detail_value"
+                android:text="Genre Detail1,Genre Detail2,Genre Detail3" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/tv_genre"
+                app:layout_constraintBottom_toTopOf="@id/tv_bahasa_utama"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/tv_detail_h"
+                style="@style/detail_title"
+                android:text="@string/bahasa_utama_title" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_h"
+                app:layout_constraintBottom_toTopOf="@id/tv_description_h"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/tv_bahasa_utama"
+                style="@style/detail_value"
+                android:text="Bahasa Value" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/tv_bahasa_utama"
+                app:layout_constraintBottom_toTopOf="@id/tv_deskripsi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/tv_description_h"
+                style="@style/detail_title"
+                android:text="@string/deskripsi_title" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/tv_description_h"
+                app:layout_constraintBottom_toTopOf="@id/tv_jumlah_episode_h"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/tv_deskripsi"
+                style="@style/detail_value"
+                android:text="@string/loren_ipsum_long" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/tv_deskripsi"
+                app:layout_constraintBottom_toTopOf="@id/tv_jumlah_episode"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/tv_jumlah_episode_h"
+                style="@style/detail_title"
+                android:text="@string/episode_title" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/tv_jumlah_episode_h"
+                app:layout_constraintBottom_toTopOf="@id/tv_jumlah_season_h"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/tv_jumlah_episode"
+                style="@style/detail_value"
+                android:text="Budget Value" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/tv_jumlah_episode"
+                app:layout_constraintBottom_toTopOf="@id/tv_jumlah_season"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/tv_jumlah_season_h"
+                style="@style/detail_title"
+                android:text="@string/season_title" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/tv_jumlah_season_h"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/tv_jumlah_season"
+                style="@style/detail_value"
+                android:text="Pendapatan Value" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.v7.widget.CardView>
